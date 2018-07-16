@@ -14,7 +14,7 @@
     <el-table :data="list" v-loading.body="listLoading" element-loading-text="Loading" border fit highlight-current-row>
       <el-table-column label="UID" align="center">
         <template slot-scope="scope">
-          {{scope.row.userId}}
+          <span>{{scope.row.userId}}</span>
         </template>
       </el-table-column>
       <el-table-column label="用户名" align="center">
@@ -24,12 +24,12 @@
       </el-table-column>
       <el-table-column label="昵称"  align="center">
         <template slot-scope="scope">
-          {{scope.row.nickname}}
+          <span>{{scope.row.nickname}}</span>
         </template>
       </el-table-column>
       <el-table-column label="描述" align="center">
         <template slot-scope="scope">
-          {{scope.row.desc}}
+          <span>{{scope.row.desc}}</span>
         </template>
       </el-table-column>
       <el-table-column label="角色标识" align="center">
